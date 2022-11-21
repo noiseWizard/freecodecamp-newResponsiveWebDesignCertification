@@ -1,0 +1,26 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+  font-family: arial;
+}
+
+#navbar, main {
+  border-style: solid;
+}
+
+#navbar {
+  position: relative;
+}
+
+main {
+  position: relative;
+  float: auto;
+}
+
+@media (min-width: 1000px) {
+#navbar {
+  float: left;
+}
+}
