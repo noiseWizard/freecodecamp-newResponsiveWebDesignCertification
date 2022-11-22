@@ -1,9 +1,23 @@
 .flex-container {
+  display: flex;
+  flex-direction: row;
+
   border-style: solid;
   border-color: red;
 }
 
 .flex-item {
+  min-width: 300px;
+
   border-style: solid;
   border-color: green;
+}
+
+
+
+
+@media (max-width: 900px){
+  .flex-container {
+    flex-direction: column;
+  }
 }
