@@ -4,12 +4,13 @@
 
 <head>
     <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
 </head>
 
 <body>
     <div class="flex-container">
         <nav id="navbar" class="flex-item">
-            <header>JS Documentation</header>
+            <header id="jsDocumentation">JS Documentation</header>
             <ul>
                 <li><a class="nav-link" href="#introduction">Introduction</a></li>
                 <li><a class="nav-link" href="#alreadyKnow">What you should already know</a></li>
@@ -104,7 +105,8 @@ if (true) { var x = 5; } console.log(x); // 5
                 </code></pre>
                 <p>This behavior changes, when using the let declaration introduced in ECMAScript 2015.</p>
                 <pre><code>
-if (true) { let y = 5; } console.log(y); // ReferenceError: y is not defined
+if (true) { let y = 5; } console.log(y); // ReferenceError: y is 
+not defined
                 </code></pre>
             </section>
 
@@ -124,7 +126,9 @@ const PI = 3.14;
                 <p>The scope rules for constants are the same as those for let block scope variables. If the const keyword is omitted, the identifier is assumed to represent a variable.</p>
                 <p>You cannot declare a constant with the same name as a function or variable in the same scope. For example:</p>
                 <pre><code>
-// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS WILL CAUSE AN ERROR ALSO function f() { const g = 5; var g; //statements }
+// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS 
+WILL CAUSE AN ERROR ALSO function f() { const g = 5; 
+var g; //statements }
                 </code></pre>
                 <p>However, object attributes are not protected, so the following statement is executed without problems.
                 </p>
@@ -161,7 +165,9 @@ if (condition) { statement_1; } else { statement_2; }
                 <p>condition can be any expression that evaluates to true or false. See Boolean for an explanation of what evaluates to true and false. If condition evaluates to true, statement_1 is executed; otherwise, statement_2 is executed. statement_1 and statement_2 can be any statement, including further nested if statements.</p>
                 <p>You may also compound the statements using else if to have multiple conditions tested in sequence, as follows:</p>
                 <pre><code>
-if (condition_1) { statement_1; } else if (condition_2) { statement_2; } else if (condition_n) { statement_n; } else { statement_last; }
+if (condition_1) { statement_1; } else if (condition_2) { 
+statement_2; } else if (condition_n) { statement_n; } else { 
+statement_last; }
                 </code></pre>
                 <p>In the case of multiple conditions only the first logical condition which evaluates to true will be executed. To execute multiple statements, group them within a block statement ({ ... }) . In general, it's good practice to always use block statements, especially when nesting if statements:</p>
                 <pre><code>
