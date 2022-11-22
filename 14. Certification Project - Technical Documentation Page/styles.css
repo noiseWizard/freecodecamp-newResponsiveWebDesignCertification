@@ -1,31 +1,9 @@
-html {
-  box-sizing: border-box;
-}
-
-* {
-  font-family: arial;
-}
-
-#navbar,
-main {
-  border-style: solid;
-}
-
 .flex-container {
-  display: flex;
-  flex-direction: row;
+  border-style: solid;
+  border-color: red;
 }
 
-#navbar {
-  display: fixed;
-}
-
-
-
-
-
-@media (max-width: 1000px) {
-  .flex-container {
-      flex-direction: column;
-  }
+.flex-item {
+  border-style: solid;
+  border-color: green;
 }
