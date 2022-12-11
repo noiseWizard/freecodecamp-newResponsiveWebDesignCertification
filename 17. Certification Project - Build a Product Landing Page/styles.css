@@ -5,6 +5,7 @@
 .flex-container {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 
 #nav-bar {
@@ -12,6 +13,23 @@
     width: 100%;
     top: 0;
     left: 0;
+}
+
+header > .flex-container {
+    justify-content: space-between;
+}
+
+#nav-bar > ul{
+  list-style: none;
+  padding: 0;
+}
+
+#nav-bar > ul > li {
+  display: inline;
+}
+
+#main-doc {
+    padding-top: 100px;
 }
 
 @media (max-width: 700px) {
