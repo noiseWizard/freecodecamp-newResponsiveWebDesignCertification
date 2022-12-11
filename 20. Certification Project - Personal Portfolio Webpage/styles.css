@@ -27,7 +27,7 @@ section {
 }
 
 section:nth-child(odd) {
-    background-color: var(--background2);
+   background-color: var(--background2);
 }
 
 .navbar {
@@ -59,6 +59,7 @@ section:nth-child(odd) {
 .project-tile {
     height: 300px;
     width: 300px;
+    border-style: solid;
 }
 
 .welcome-section {
