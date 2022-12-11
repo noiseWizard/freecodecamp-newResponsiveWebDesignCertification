@@ -9,6 +9,24 @@
     left: 0;
 }
 
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-tile {
+    height: 300px;
+    width: 300px;
+}
+
 .welcome-section {
     height: 100vh;
+}
+
+@media (max-width: 700px) {
+    .welcome-section {
+        height: 50vh;
+    }
 }
